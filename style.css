@@ -1,0 +1,329 @@
+
+
+
+	*{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+		font-family:
+		text-transform:capitalize;
+		text-decoration:none;
+	
+	
+	}
+	
+	body{
+		min-height: 100vh;
+		background:#ccc;
+		background-size:cover;
+		background-position:center;
+	}
+	
+	
+	header{
+		position:fixed;
+		top:0;
+		left:0;
+		right:0;
+		background: #fff;
+		box-shadow: 0 5px 10px rgba(0,0,0,.1);
+		padding: 0px 7%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		z-index: 1000;
+		
+	}
+	
+	
+	header .logo{
+		font-weight:bolder;
+		font-size:25px;
+		color:#333;
+		
+		
+	}
+	
+	
+	header .navbar ul{
+		list-style:none;
+		
+	}
+	
+	
+	header .navbar ul li{
+		position:relative;
+		float:left;
+	}
+	
+	
+	header .navbar ul li a{
+		font-size:20px;
+		padding:20px;
+		color:#333;
+		display:block;
+		
+	}
+	
+	
+	header .navbar ul li a:hover{
+		background:#333;
+		color:#fff;
+	}
+	
+	
+	header .navbar ul li ul{
+		position:absolute;
+		left:0;
+		width:100%;
+		background:#fff;
+		display:none;
+		
+	}
+	
+	
+	
+		header .navbar ul li:hover > ul{
+			display:initial;
+		}
+	.box-container h2{
+		position:absolute;
+		top:140px;
+		right:100px;
+		color:#fff;
+		font-size:40px;
+		
+	}
+	.box-container h2:hover{
+		font-size:45px;
+		cursor:pointer;
+		color:#000;
+		
+		
+	}
+	.box-container .icons img:hover{
+		height:60px;
+		background:#fff;
+	}
+		
+		
+	.box-container .icons {
+		display:flex;
+		position:absolute;
+		top:140px;
+		left:0; 
+		width:auto;
+		height:50px;
+		
+		
+	}
+	
+	
+		.box-container .info{
+			position:absolute;
+			top:250px;
+			left:100px;
+			
+		}
+		.box-container   .info a{
+			display:block;
+			color:blue;
+			padding:6px 0;
+			
+
+		}
+		.box-container .info .post{
+			display:block;
+			font-size:18px;
+			color:#fff;
+		}
+		
+		.box-container .info h4{
+			padding-bottom:20px;
+		}
+
+		.box-container .info a:hover{
+
+			color:red;
+		}
+
+		
+		.info .title{
+
+			font-size:49px;
+
+			color:#fff;
+
+			padding:5px 0;
+
+			text-transform:capitalize;
+
+		}
+		
+		
+		.box-container .info .title:hover{
+
+			color:D35339;
+
+		}
+
+
+
+		.box-container .info .title span{
+
+			color:coral;
+
+		}
+
+		.box-container .info span:hover{
+
+			color:#000;
+
+		}
+
+		
+	
+		
+		.box-container .image{
+			position:absolute;
+			bottom:0;
+			right:0;
+			
+			
+		}
+		
+		.box-container .image img{
+			width:400px;
+			height:400px;
+			box-shadow:0px 0 3px 10px black;
+			border-radius:220px 0px 0px 0px;
+		}
+
+		.box-container .share{
+			position:absolute;
+			bottom:0;
+			left:20px;
+			padding: 0 2px;
+
+			display: flex;
+
+			align-items:center;
+
+			justify-content:center;
+
+		} 
+
+	
+
+	
+
+		.box-container .share a{
+
+			margin:10px;
+
+			font-size:23px;
+
+			color:#0000ff;
+
+			padding:3px;
+
+			border:1px solid blue;
+
+		}
+		
+		.box-container .share a:hover{color:red;
+
+			background-color:210B9F;
+
+		}
+
+		
+		
+		
+		
+		/*--MOBAIL VIEW--*/
+
+
+
+	@media(max-width:650px){
+		.box-container{
+			width:340px;
+			height:auto;
+			display:block;
+			flex-flow: column;
+			text-align:center;
+			
+			
+		}
+		
+		
+		
+		header .navbar ul li a{
+			font-size:15px;
+			padding:5px;
+		}
+		
+		.box-container	header .navbar ul li ul{
+			display:none;
+		}
+	
+	
+	
+		header .navbar ul li:hover > ul{
+			display:initial;
+		}
+	
+		
+		.box-container .navbar ul {
+			display:block;
+			
+			
+			
+		}
+		
+		.box-container .info{
+			position:absolute;
+			top:20%;
+			left:15px;
+			
+			
+		}
+	
+		.box-container .image{
+			position:absolute;
+			right:0;
+			bottom:0;
+			
+			
+			
+		}
+		
+
+		
+		
+		.box-container .image img{
+			height:200px;
+			width:200px;
+			border-radius:110px 0px 0px 0px;
+				
+		}
+	
+		
+		
+		.box-container .share{
+			position:absolute;
+			bottom:0;
+			left:10px;
+			padding: 0 2px;
+			
+			display: 
+			align-items:center;
+			justify-content:center;
+			
+			
+			
+
+		} 
+
+			
+	}
